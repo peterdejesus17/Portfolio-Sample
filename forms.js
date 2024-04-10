@@ -6,7 +6,7 @@ var create_forms_input = (element, type, element_id, class_value, value_holder) 
     new_element.setAttribute("id", element_id);
     new_element.setAttribute("class", class_value)
     
-
+    // if input type is radio, make a new element for the radio button label
     if (type=="radio") {
         new_element.setAttribute("value", value_holder)
         const radio_label = document.createElement("label");
